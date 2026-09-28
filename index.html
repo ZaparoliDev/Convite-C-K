@@ -712,9 +712,8 @@ function prepararLink(evento, destino, rotulo) {
 }
 
 function prepararComoChegar() {
-  iniciarContagem("Como chegar", () => {
-    mostrarAviso("Como chegar", "O endereço da cerimônia será divulgado assim que todos os detalhes estiverem confirmados.");
-  });
+  const destino = "https://maps.app.goo.gl/vEQy5d6z9ki2pTTe7?g_st=iw";
+  iniciarContagem("Como chegar", () => { location.href = destino; });
 }
 
 function iniciarContagem(rotulo, acao) {
